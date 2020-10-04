@@ -1,0 +1,26 @@
+🌟 COURSE RESOURCES 🌟
+
+
+VSCode
+https://code.visualstudio.com/
+
+Figma
+https://www.figma.com/
+
+ImageOptim
+https://imageoptim.com/mac
+
+Google Fonts
+https://fonts.google.com/
+
+Live Server
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+Firefox Developer Edition
+https://www.mozilla.org/en-US/firefox/developer/
+
+Ultimate CSS Grid Guide
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+Ultimate CSS Flexbox Guide
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/

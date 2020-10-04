@@ -1,0 +1,115 @@
+@font-face {
+    font-family: yoxall;
+    src: url(./fonts/yoxall_b.ttf);
+  }
+  
+  :root {
+    font-size: 16px;
+    --dark001: #1a1b1c;
+    --light001: #fafcfe;
+    --red001: #ff5757;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+  
+body {
+    background-color: var(--light001);
+    height: 100%;
+    font-family: Open Sans, sans-serif;
+}
+
+.home__main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main__content h1 {
+    color: var(--dark001);
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.main__content p {
+    font-size: 1.5rem;
+    line-height: 180%;
+    margin-bottom: 3rem;
+}
+
+.main__content a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--light001);
+    border-radius: 40px;
+    text-transform: uppercase;
+    background-color: var(--dark001);
+    border: 1px solid var(--dark001);
+    padding: 20px 100px;
+    transition: 0.3s ease;    
+}
+.main__content a:hover {
+    color: var(--dark001);
+    background-color: var(--light001);
+}
+
+.main__visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main__visual img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+.group-one .square-picture {
+    background-image: linear-gradient(
+        180deg,
+        rgba(26, 27, 28, 0) 50%,
+        rgba(26, 27, 28, 0.2) 74.85%,
+        rgba(26, 27, 28, 0.4) 100%
+      ), url(../png/marques-brownlee.jpg);
+}
+
+.group-one .large-picture {
+    background-image: linear-gradient(
+        180deg,
+        rgba(26, 27, 28, 0) 50%,
+        rgba(26, 27, 28, 0.2) 74.85%,
+        rgba(26, 27, 28, 0.4) 100%
+      ), url(../png/tech-me-out.jpg);
+}
+.group-two .square-picture {
+    background-image: linear-gradient(
+        180deg,
+        rgba(26, 27, 28, 0) 50%,
+        rgba(26, 27, 28, 0.2) 74.85%,
+        rgba(26, 27, 28, 0.4) 100%
+      ), url(../png/ijustine.jpg);
+}
+.group-two .square-picture {
+    background-image: linear-gradient(
+        180deg,
+        rgba(26, 27, 28, 0) 50%,
+        rgba(26, 27, 28, 0.2) 74.85%,
+        rgba(26, 27, 28, 0.4) 100%
+      ), url(../png/peter-mckinnon.jpg);
+}
+
+
+
