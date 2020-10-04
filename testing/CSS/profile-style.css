@@ -26,7 +26,7 @@ body {
 }
 
 .wrap-content {
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .home__main {
@@ -48,6 +48,14 @@ body {
     font-size: 3rem;
     margin-bottom: 3rem;
 }
+
+.main__content span {
+    display: block;
+    height: 1px;
+    width: 40%;
+    background-color: var(--dark001);
+    margin-bottom: 3rem;
+}
 .main__content p {
     font-size: 1rem;
     line-height: 180%;
@@ -62,7 +70,7 @@ body {
     text-transform: uppercase;
     background-color: var(--dark001);
     border: 1px solid var(--dark001);
-    padding: 20px 100px;
+    padding: 15px 80px;
     transition: 0.3s ease;    
 }
 .main__content a:hover {
@@ -182,7 +190,7 @@ body {
         margin: 3rem 0;
     }
     .main__content a {
-        padding: 10px 40px;
+        padding: 8px 40px;
     }
     .main__content h1 {
         font-size: 2rem;
