@@ -25,6 +25,10 @@ body {
     font-family: Open Sans, sans-serif;
 }
 
+.wrap-content {
+    max-width: 90%;
+}
+
 .home__main {
     height: 100%;
     display: grid;
@@ -41,11 +45,11 @@ body {
 .main__content h1 {
     color: var(--dark001);
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
 }
 .main__content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 180%;
     margin-bottom: 3rem;
 }
@@ -70,46 +74,120 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.main__visual img {
-    border-radius: 50%;
-    width: 50px;
+
+.group-one {
+    display: flex;
+    flex-direction: column;
+}
+.group-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__profile {
+    width:50px;
     height: 50px;
+    border-radius: 50%;
 }
 
+.card--square {
+    height: 0;
+    padding-top: calc(100% - 32px);
+}
 
-.group-one .square-picture {
+.card--large {
+    flex: auto;
+}
+
+.group-one {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/span 1;
+}
+.group-two {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/span 1;
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card__header {
+    padding: 1rem 2rem;
+}
+.card__link {
+    color: var(--light001);
+    text-decoration: none;
+    font-size: 1rem;   
+}
+.group-one .card--square {
     background-image: linear-gradient(
         180deg,
         rgba(26, 27, 28, 0) 50%,
         rgba(26, 27, 28, 0.2) 74.85%,
         rgba(26, 27, 28, 0.4) 100%
-      ), url(../png/marques-brownlee.jpg);
+      ),url(../png/marques-brownlee.jpg);
 }
 
-.group-one .large-picture {
+.group-one .card--large {
     background-image: linear-gradient(
         180deg,
         rgba(26, 27, 28, 0) 50%,
         rgba(26, 27, 28, 0.2) 74.85%,
         rgba(26, 27, 28, 0.4) 100%
-      ), url(../png/tech-me-out.jpg);
+      ),url(../png/tech-me-out.jpg);
+ 
 }
-.group-two .square-picture {
+
+.group-two .card--square {
     background-image: linear-gradient(
         180deg,
         rgba(26, 27, 28, 0) 50%,
         rgba(26, 27, 28, 0.2) 74.85%,
         rgba(26, 27, 28, 0.4) 100%
-      ), url(../png/ijustine.jpg);
-}
-.group-two .square-picture {
+      ),url(../png/peter-mckinnon.jpg);
+ }
+
+.group-two .card--large {
     background-image: linear-gradient(
         180deg,
         rgba(26, 27, 28, 0) 50%,
         rgba(26, 27, 28, 0.2) 74.85%,
         rgba(26, 27, 28, 0.4) 100%
-      ), url(../png/peter-mckinnon.jpg);
+      ),url(../png/ijustine.jpg);
 }
 
+@media only screen and (max-width: 600px) {
+    .home__main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__visual {
+        display: flex;
+        flex-direction: column;
+    }
+    .card--large {
+        height: 0;
+        padding-top: calc( 100% - 32px );
+    }
 
-
+    .main__content {
+        margin: 3rem 0;
+    }
+    .main__content a {
+        padding: 10px 40px;
+    }
+    .main__content h1 {
+        font-size: 2rem;
+    }
+    .main__content p {
+        font-size:0.8 rem;
+    }
+}
