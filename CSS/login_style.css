@@ -1,0 +1,114 @@
+@font-face {
+    font-family: yoxall;
+    src: url(./fonts/yoxall_b.ttf);
+  }
+  
+  :root {
+    font-size: 16px;
+    --black: #202020;
+    --white: #FFFFFF;
+    --red:#C10000;
+  } 
+  
+
+body {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Nunito Sans', sans-serif, Arial;
+}
+
+.logo {
+    position: absolute;
+    left: 2em;
+    top:2em;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+
+.login__layout {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login__visual {
+    background-image: url(../png/login_visual.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login__fuction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fuc__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input {
+    padding: 0px;
+    color: grey;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+.fuc__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3em;
+}
+.fuc__forgot-password-button {
+    font-size: 0.8em;
+    color: var(--red);
+    margin-left: 17em;
+}
+.input-bottom-line {
+    height: 2px;
+    width: 20em;
+    background-color: grey;
+}
+.fuc__button {
+    margin-top: 3rem;
+    height: inherit;
+    display: flex;
+    justify-content: center;    
+}
+.button {
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.fuc__login-button {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    color: var(--white);
+    margin-right: 1rem;
+}
+.fuc__login-button:hover {
+    background-color: var(--white);
+    color: var(--red);
+    transition: 0.3s ease;
+}
+
+.fuc__register-button {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    margin-left: 1rem;
+}
+.fuc__register-button:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+@media only screen and (max-width: 850) {
+
+}
