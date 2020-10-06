@@ -68,11 +68,11 @@ body {
 .fuc__forgot-password-button {
     font-size: 0.8em;
     color: var(--red);
-    margin-left: 17em;
+    margin-left: 10em;
 }
 .input-bottom-line {
     height: 2px;
-    width: 20em;
+    width: 15em;
     background-color: grey;
 }
 .fuc__button {
@@ -109,6 +109,10 @@ body {
     color: var(--white);
 }
 
-@media only screen and (max-width: 850) {
-
+@media only screen and (max-width: 800px) {
+    .login__layout {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
 }
